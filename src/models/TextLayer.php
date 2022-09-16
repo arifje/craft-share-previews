@@ -167,7 +167,7 @@ class TextLayer extends AbstractRectangleLayer
         ];
     }
 
-    public function attributes()
+    public function attributes(): array
     {
         return array_merge(
             parent::attributes(),
