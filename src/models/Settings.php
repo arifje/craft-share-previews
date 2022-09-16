@@ -76,7 +76,7 @@ class Settings extends \craft\base\Model
         return TemplateSelectField::displayName();
     }
 
-    public function rules()
+    public function rules(): array
     {
         return array_merge(parent::rules(), [
             ['routePrefix', 'required'],
