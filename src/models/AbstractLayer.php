@@ -59,7 +59,7 @@ abstract class AbstractLayer extends Model
 
     abstract public function isAvailableInTemplateEditor(): bool;
 
-    public function attributes()
+    public function attributes(): array
     {
         return array_merge(parent::attributes(), [
             'type',
