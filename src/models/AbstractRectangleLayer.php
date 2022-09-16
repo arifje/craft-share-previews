@@ -41,7 +41,7 @@ abstract class AbstractRectangleLayer extends AbstractLayer
         return $this->getHiddenPaddingFields();
     }
 
-    public function attributes()
+    public function attributes(): array
     {
         return array_merge(
             parent::attributes(),
