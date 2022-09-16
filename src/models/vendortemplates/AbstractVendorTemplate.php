@@ -6,7 +6,7 @@ use craft\helpers\StringHelper;
 
 abstract class AbstractVendorTemplate extends \alps\sharepreviews\models\Template
 {
-    public static function getTemplates()
+    public static function getTemplates(): array
     {
         return [
             1 => Electra::class,
@@ -28,7 +28,7 @@ abstract class AbstractVendorTemplate extends \alps\sharepreviews\models\Templat
         ];
     }
 
-    public function init()
+    public function init(): void
     {
         parent::init();
 
