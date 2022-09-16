@@ -38,7 +38,7 @@ class Settings extends \craft\base\Model
 
     public function setTemplates(array $templates): array
     {
-        $this->templates = array_map(function ($template) {
+        $this->templates = array_map(function (array $template) {
             return new Template($template);
         }, $templates);
 
