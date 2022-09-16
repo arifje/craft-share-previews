@@ -32,7 +32,7 @@ class Template extends Model
 
     private array $variables = [];
 
-    public function attributes()
+    public function attributes(): array
     {
         return array_merge(
             parent::attributes(),
