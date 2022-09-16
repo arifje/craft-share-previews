@@ -23,7 +23,7 @@ class Settings extends \craft\base\Model
 
     private array $templates = [];
 
-    public function attributes()
+    public function attributes(): array
     {
         return array_merge(parent::attributes(), [
             'templates',
