@@ -36,7 +36,7 @@ class Settings extends \craft\base\Model
         return $this->templates;
     }
 
-    public function setTemplates(array $templates): array
+    public function setTemplates(array $templates)
     {
         $this->templates = array_map(function ($template) {
             return new Template($template);
