@@ -31,7 +31,7 @@ class Settings extends \craft\base\Model
         ]);
     }
 
-    public function getTemplates(): array
+    public function getTemplates()
     {
         return $this->templates;
     }
